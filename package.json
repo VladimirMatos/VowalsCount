@@ -1,0 +1,22 @@
+{
+  "name": "npm-vowalscount-vladimir",
+  "version": "1.0.0",
+  "description": "Vowals coun module",
+  "main": "Main.js",
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/VladimirMatos/VowalsCount.git",
+  "dependencies": {
+    "jest": "^27.2.0",
+    "module": "^1.2.5",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
