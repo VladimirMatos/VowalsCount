@@ -13,23 +13,30 @@ const VowelsCount = (text) =>{
 }
 
 function VowelsCountTest(text){
-    let lettercount = 0;
-    var vowals = ["a", "e", "i", "o", "u"]
+    
+    let vowalsarray = Array.from(text);
+    let count = 0;
+    let elements = /[a,e,i,o,u]/g;
     if (text == null || !text){
         return ('ArgumentNullException');
     }
 
     if(text == "" || !isNaN(text)){
-        return lettercount = {}
+        return lettercount = " "
+    }
+    
+    for (let index = 0; index < vowalsarray.length; index++) {
+        const element = vowalsarray[index];
+
+        
+        if (element.toLowerCase().match(elements)) {
+            count ++;
+        }
+        
     }
 
-    for (let i of text.toLowerCase()){
-        if(vowals.includes(i)){
-            lettercount ++;
-        }
-    }    
-
-    return lettercount;
+    return count;
 }
+console.log(VowelsCount("Murcielago x MURCIELAGO = mUrciElagO cuadrado"))
 
 exports.VowelsCount = VowelsCount;
